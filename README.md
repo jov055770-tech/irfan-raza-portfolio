@@ -21,3 +21,21 @@ Updated responsive portfolio package with:
 - assets/
 
 Deploy by opening `index.html` locally or uploading the whole folder to Netlify Drop.
+
+
+## V4 changes
+- Added featured payoff headline:
+  - This One Change Can Reduce Your Electricity Bill by 95%
+  - 1.1M views
+  - On ground Documentary + motion graphics
+- Added Instagram button at the top:
+  - https://www.instagram.com/edit_aspire/
+- Added Instagram button in hero actions too
+
+
+## V5 changes
+- Added a separate `gallery.html` page named **Project Gallery**
+- Added **11 reels** in a dedicated reels section
+- Added **22 long-format videos** in a dedicated long-format section
+- Added `Project Gallery` link in the main portfolio navigation
+- Added `Open Full Project Gallery` button on the homepage
