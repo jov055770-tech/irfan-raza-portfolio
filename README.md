@@ -53,3 +53,9 @@ Deploy the entire folder to Netlify for best results.
 - Added new cache-busted files:
   - styles-v13.css
   - script-v13.js
+
+
+## V14 update
+- Added retro pixel-style WhatsApp button beside Showreel and Contact Me.
+- Cleaned question-block and pipe PNGs to remove cropped/stray side fragments.
+- Added responsive spacing for the new CTA row.
