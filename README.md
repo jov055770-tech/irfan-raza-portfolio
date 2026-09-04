@@ -1,21 +1,23 @@
-# Irfan Raza — Video Editor Portfolio
 
-Responsive GitHub Pages-ready portfolio.
+# Md Irfan Raza Portfolio V3
 
-## Showcase order
-1. YouTube Short — https://youtube.com/shorts/aRD-pvLzmlw
-2. YouTube Short — https://youtube.com/shorts/UuYYLlczrHk
-3. Instagram — https://www.instagram.com/p/DQ9zjNdE7Ha/
-4. Instagram — https://www.instagram.com/p/DRKgSUVkyIa/
-5. YouTube Short — https://youtube.com/shorts/NADLANsb6GA
+Updated responsive portfolio package with:
+- Smaller name styling
+- Reduced pixel intensity compared with the first concept
+- Animated sky stars and waving flags
+- 5 reels kept in a single row on desktop
+- Mobile-friendly horizontal reel scrolling
+- Real user photo added
+- Screenshots moved to the last section
+- Contact updated:
+  - irfanraza055@gmail.com
+  - 7717777075
+  - WhatsApp
 
-## Final payoff
-- https://youtu.be/m8CQNYvjB_Q
+## Files
+- index.html
+- styles.css
+- script.js
+- assets/
 
-All six are integrated into `index.html`.
-YouTube videos use native iframe embeds.
-Instagram posts use Instagram `/embed/` iframes and each card also has a direct-link fallback.
-
-## GitHub Pages
-Upload `index.html`, `styles.css`, `script.js`, and `README.md` to the repository root.
-Then enable GitHub Pages from the `main` branch and `/ (root)`.
+Deploy by opening `index.html` locally or uploading the whole folder to Netlify Drop.
