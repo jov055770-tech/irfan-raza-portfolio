@@ -43,3 +43,15 @@ Do NOT upload an older V4/V5 folder if you want Gallery and Instagram fixes.
   - flag-red.png
   - flag-blue.png
   - ladder.png
+
+
+## V8 IMPORTANT FIX
+- Profile frame is now a single PNG asset: `assets/profile-card-v8.png`
+- Clouds, coins, pipe, flags, bricks and ground are combined into: `assets/hero-scenery-v8.png`
+- Gallery decoration uses: `assets/gallery-scenery-v8.png`
+- Old CSS-drawn cloud/frame system is disabled
+- CSS renamed to `styles-v8.css`
+- JS renamed to `script-v8.js`
+- `?v=8` cache-busting added so Netlify/browser cannot keep showing the old design
+
+When deploying, extract this ZIP and upload the ENTIRE V8 folder.
