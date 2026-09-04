@@ -43,3 +43,13 @@ This version is a full redesign based on:
 - Instagram: https://www.instagram.com/edit_aspire/
 
 Deploy the entire folder to Netlify for best results.
+
+
+## V13 fixes
+- Fixed visible cuttings / clipping across the layout
+- Repositioned hero decorative assets so they stay inside the page
+- Improved screenshot fitting with contain mode and inner padding
+- Improved gallery hero asset placement
+- Added new cache-busted files:
+  - styles-v13.css
+  - script-v13.js
