@@ -27,3 +27,19 @@ This version is redesigned to closely follow the supplied dark retro pixel-game 
 ## Deploy
 Upload the whole extracted folder to Netlify Drop.
 Do NOT upload an older V4/V5 folder if you want Gallery and Instagram fixes.
+
+
+## V7 changes
+- Added real PNG UI/game assets inside `assets/`
+- Homepage and gallery now use PNG assets instead of only CSS-drawn shapes
+- Assets added:
+  - cloud.png
+  - star.png
+  - coin.png
+  - brick.png
+  - question-block.png
+  - pipe.png
+  - ground-tile.png
+  - flag-red.png
+  - flag-blue.png
+  - ladder.png

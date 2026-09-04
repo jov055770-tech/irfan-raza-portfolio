@@ -512,3 +512,110 @@ img{display:block;max-width:100%}
   .gallery-counts div{flex:1}
   .cta-grid h2{font-size:19px}
 }
+
+
+/* ---------- V7 PNG asset based decorations ---------- */
+.ambient-stars{
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:-1;
+}
+.ambient-stars i{
+  position:fixed;
+  width:26px;
+  height:26px;
+  background:url('assets/star.png') center/contain no-repeat;
+  animation:twinkle 1.9s ease-in-out infinite;
+  box-shadow:none;
+}
+.hero-stage{overflow:hidden}
+.asset-cloud,
+.asset-flag,
+.asset-coin,
+.asset-qblock,
+.asset-pipe,
+.asset-ladder{
+  position:absolute;
+  user-select:none;
+  pointer-events:none;
+  image-rendering:pixelated;
+}
+.asset-cloud{
+  width:120px;
+  opacity:.96;
+  filter:drop-shadow(0 10px 12px rgba(0,0,0,.18));
+  animation:cloudFloat 8s ease-in-out infinite;
+}
+.cloud-one{top:36px;left:10%}
+.cloud-two{top:52px;right:8%;width:110px;animation-duration:10s;animation-direction:reverse}
+.asset-ladder{left:6px;bottom:26px;width:34px;opacity:.92}
+.asset-coin{width:24px;animation:coinFloat 2.8s ease-in-out infinite}
+.coin-one{right:9%;top:84px}
+.coin-two{right:4%;top:134px;animation-delay:.6s}
+.asset-qblock{right:3%;top:158px;width:56px;animation:bob 2.4s ease-in-out infinite}
+.asset-pipe{right:24px;bottom:8px;width:90px}
+.asset-flag{width:34px;bottom:24px;animation:flagAssetWave 1.6s ease-in-out infinite;transform-origin:15px 90px}
+.flag-one{right:108px}
+.flag-two{left:334px;width:30px;animation-delay:.3s}
+.ground-strip{
+  height:40px;
+  background:url('assets/ground-tile.png') left top/160px 40px repeat-x;
+  border-top:none;
+  box-shadow:none;
+}
+.screens-decor{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:12px;
+  opacity:.96;
+}
+.screens-decor img:first-child{width:70px;image-rendering:pixelated}
+.screens-decor img:last-child{width:24px;image-rendering:pixelated}
+
+.gallery-decor{
+  position:relative;
+  height:0;
+}
+.gallery-decor img{
+  position:absolute;
+  image-rendering:pixelated;
+  pointer-events:none;
+}
+.gallery-cloud-left{left:40px;top:-210px;width:120px;animation:cloudFloat 8s ease-in-out infinite}
+.gallery-cloud-right{right:20px;top:-190px;width:112px;animation:cloudFloat 10s ease-in-out infinite reverse}
+.gallery-coin{right:90px;top:-130px;width:24px;animation:coinFloat 2.8s ease-in-out infinite}
+.gallery-flag{right:18px;top:-40px;width:34px;animation:flagAssetWave 1.6s ease-in-out infinite;transform-origin:15px 90px}
+
+@keyframes coinFloat{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-8px)}
+}
+@keyframes bob{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-6px)}
+}
+@keyframes flagAssetWave{
+  0%,100%{transform:rotate(0deg)}
+  50%{transform:rotate(-4deg)}
+}
+
+@media(max-width:1100px){
+  .coin-two,.qblock-one{display:none}
+}
+@media(max-width:840px){
+  .asset-cloud{width:92px}
+  .asset-pipe{width:70px;right:10px}
+  .flag-two{left:auto;right:86px}
+  .coin-one{top:72px}
+}
+@media(max-width:620px){
+  .cloud-one{left:6%}
+  .cloud-two{right:2%}
+  .asset-ladder{display:none}
+  .asset-pipe{width:58px}
+  .flag-one{right:76px}
+  .flag-two{display:none}
+  .asset-qblock{top:148px;width:48px}
+}
