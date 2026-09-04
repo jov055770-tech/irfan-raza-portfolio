@@ -81,3 +81,15 @@ Hero and gallery scenery were rebuilt as:
 Cache busting:
 - `styles-v10.css?v=10`
 - `script-v10.js?v=10`
+
+
+## V11 sky fix
+- Used your edited V10 package as source
+- Rebuilt hero and gallery scenery from the CURRENT assets folder
+- New files:
+  - assets/hero-scenery-v11.png
+  - assets/gallery-scenery-v11.png
+- Fixed crop by removing `object-fit: cover` behavior from scenery images
+- New stylesheet: styles-v11.css
+- New script reference: script-v11.js
+- Cache busting: ?v=11
