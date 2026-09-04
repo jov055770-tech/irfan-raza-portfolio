@@ -7,340 +7,425 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles-v11.css?v=11">
+  <link rel="stylesheet" href="styles-v12.css?v=12">
 </head>
-<body>
-  <header class="pixel-header">
+<body class="gallery-page">
+  <header class="site-header">
     <div class="shell header-inner">
-      <a class="brand-block" href="index.html">
-        <span class="brand-play">▶</span>
-        <span><b>TECHBURNE</b><small>PROJECT GALLERY</small></span>
+      <a href="index.html" class="brand">
+        <span class="brand-icon">▶</span>
+        <div>
+          <b>TECHBURNE</b>
+          <small>PROJECT GALLERY</small>
+        </div>
       </a>
+
       <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+
       <nav class="main-nav" id="mainNav">
         <a href="index.html">HOME</a>
         <a href="#reels">REELS</a>
         <a href="#long">LONG FORMAT</a>
-        <a href="index.html#about">ABOUT</a>
         <a href="index.html#contact">CONTACT</a>
       </nav>
-      <div class="header-actions">
-        <a class="mini-btn gallery-btn active" href="gallery.html">GALLERY</a>
-        <a class="mini-btn insta-btn" href="https://www.instagram.com/edit_aspire/" target="_blank" rel="noopener">INSTAGRAM ↗</a>
+
+      <div class="top-actions">
+        <a class="small-btn blue" href="index.html">HOME</a>
+        <a class="small-btn insta" href="https://www.instagram.com/edit_aspire/" target="_blank" rel="noopener">INSTAGRAM ↗</a>
       </div>
     </div>
   </header>
 
   <main>
-    <img class="gallery-scenery-png" src="assets/gallery-scenery-v11.png?v=11" alt="" aria-hidden="true">
-    <section class="gallery-hero shell">
-      <p class="role-chip">PROJECT GALLERY</p>
-      <h1>MY EDITING<br><span>WORK</span></h1>
-      <p>Reels and long-format projects separated into two clean galleries.</p>
-      <div class="gallery-counts">
-        <div><b>11</b><span>REELS</span></div>
-        <div><b>22</b><span>LONG FORMAT</span></div>
+    <section class="gallery-hero">
+      <div class="shell gallery-hero-inner">
+        <img class="gallery-cloud gc1" src="assets/cloud-v12.png?v=12" alt="" aria-hidden="true">
+        <img class="gallery-cloud gc2" src="assets/cloud-v12.png?v=12" alt="" aria-hidden="true">
+        <img class="gallery-coin" src="assets/coin-v12.png?v=12" alt="" aria-hidden="true">
+        <img class="gallery-pipe" src="assets/pipe-v12.png?v=12" alt="" aria-hidden="true">
+
+        <p class="label-chip">PROJECT GALLERY</p>
+        <h1>MY EDITING<br><span>WORK</span></h1>
+        <p>All reels and long-format videos in one separate gallery page.</p>
+
+        <div class="gallery-counts">
+          <article><b>11</b><span>REELS</span></article>
+          <article><b>22</b><span>LONG FORMAT</span></article>
+        </div>
       </div>
     </section>
 
-    <div class="ground-strip"></div>
-
-    <section class="section shell" id="reels">
-      <div class="section-title-row">
-        <div class="title-with-star"><span>★</span><h2>REELS</h2></div>
-        <a class="text-link" href="#long">GO TO LONG FORMAT ↓</a>
+    <section class="shell section" id="reels">
+      <div class="section-head">
+        <div class="section-title"><span>★</span><h2>REELS</h2></div>
+        <a href="#long" class="head-link">GO TO LONG FORMAT ↓</a>
       </div>
-      <div class="gallery-reels-grid">
-        <article class="gallery-card">
-      <div class="gallery-media vertical-media">
+      <div class="gallery-grid reels-grid">
+        
+    <article class="gallery-card">
+      <div class="gallery-media vertical">
         <iframe src="https://www.youtube.com/embed/PG8WKKEPhNQ" title="Reel 01" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Reel 01</h3><a href="https://youtube.com/shorts/PG8WKKEPhNQ" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Reel 01</h3><a href="https://youtube.com/shorts/PG8WKKEPhNQ" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card">
-      <div class="gallery-media vertical-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media vertical">
         <iframe src="https://www.youtube.com/embed/VMLtavG5mXU" title="Reel 02" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Reel 02</h3><a href="https://youtube.com/shorts/VMLtavG5mXU" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Reel 02</h3><a href="https://youtube.com/shorts/VMLtavG5mXU" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card">
-      <div class="gallery-media vertical-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media vertical">
         <iframe src="https://www.youtube.com/embed/Mc6FhAX66EQ" title="Reel 03" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Reel 03</h3><a href="https://youtube.com/shorts/Mc6FhAX66EQ" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Reel 03</h3><a href="https://youtube.com/shorts/Mc6FhAX66EQ" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card">
-      <div class="gallery-media vertical-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media vertical">
         <iframe src="https://www.youtube.com/embed/JnCwyD_KBHc" title="Reel 04" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Reel 04</h3><a href="https://youtube.com/shorts/JnCwyD_KBHc" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Reel 04</h3><a href="https://youtube.com/shorts/JnCwyD_KBHc" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card">
-      <div class="gallery-media vertical-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media vertical">
         <iframe src="https://www.youtube.com/embed/C4DKtWh1edQ" title="Reel 05" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Reel 05</h3><a href="https://youtube.com/shorts/C4DKtWh1edQ" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Reel 05</h3><a href="https://youtube.com/shorts/C4DKtWh1edQ" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card">
-      <div class="gallery-media vertical-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media vertical">
         <iframe src="https://www.youtube.com/embed/1LkAkyrdFvM" title="Reel 06" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Reel 06</h3><a href="https://youtube.com/shorts/1LkAkyrdFvM" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Reel 06</h3><a href="https://youtube.com/shorts/1LkAkyrdFvM" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card">
-      <div class="gallery-media vertical-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media vertical">
         <iframe src="https://www.youtube.com/embed/_cpspMHOo2I" title="Reel 07" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Reel 07</h3><a href="https://youtube.com/shorts/_cpspMHOo2I" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Reel 07</h3><a href="https://youtube.com/shorts/_cpspMHOo2I" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card">
-      <div class="gallery-media vertical-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media vertical">
         <iframe src="https://www.youtube.com/embed/OxNz9zCn9CA" title="Reel 08" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Reel 08</h3><a href="https://youtube.com/shorts/OxNz9zCn9CA" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Reel 08</h3><a href="https://youtube.com/shorts/OxNz9zCn9CA" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card">
-      <div class="gallery-media vertical-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media vertical">
         <iframe src="https://www.youtube.com/embed/dFtq6QlcOJU" title="Reel 09" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Reel 09</h3><a href="https://youtube.com/shorts/dFtq6QlcOJU" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Reel 09</h3><a href="https://youtube.com/shorts/dFtq6QlcOJU" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card">
-      <div class="gallery-media vertical-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media vertical">
         <iframe src="https://www.youtube.com/embed/WZdLW5rU0Ak" title="Reel 10" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Reel 10</h3><a href="https://youtube.com/shorts/WZdLW5rU0Ak" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Reel 10</h3><a href="https://youtube.com/shorts/WZdLW5rU0Ak" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card">
-      <div class="gallery-media vertical-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media vertical">
         <iframe src="https://www.youtube.com/embed/moOnvPg2eQQ" title="Reel 11" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Reel 11</h3><a href="https://youtube.com/shorts/moOnvPg2eQQ" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Reel 11</h3><a href="https://youtube.com/shorts/moOnvPg2eQQ" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
+    
       </div>
     </section>
 
-    <section class="section shell" id="long">
-      <div class="section-title-row">
-        <div class="title-with-star"><span>★</span><h2>LONG FORMAT</h2></div>
-        <a class="text-link" href="#reels">BACK TO REELS ↑</a>
+    <section class="shell section" id="long">
+      <div class="section-head">
+        <div class="section-title"><span>★</span><h2>LONG FORMAT</h2></div>
+        <a href="#reels" class="head-link">BACK TO REELS ↑</a>
       </div>
-      <div class="gallery-long-grid">
-        <article class="gallery-card wide-card">
-      <div class="gallery-media wide-media">
+      <div class="gallery-grid long-grid">
+        
+    <article class="gallery-card">
+      <div class="gallery-media wide">
         <iframe src="https://www.youtube.com/embed/XsXN_KSTZUE" title="Long Format 01" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Long Format 01</h3><a href="https://youtu.be/XsXN_KSTZUE" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Long Format 01</h3><a href="https://youtu.be/XsXN_KSTZUE" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card wide-card">
-      <div class="gallery-media wide-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media wide">
         <iframe src="https://www.youtube.com/embed/PtGxCyKWoyc" title="Long Format 02" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Long Format 02</h3><a href="https://youtu.be/PtGxCyKWoyc" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Long Format 02</h3><a href="https://youtu.be/PtGxCyKWoyc" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card wide-card">
-      <div class="gallery-media wide-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media wide">
         <iframe src="https://www.youtube.com/embed/jSwI1sLjiNo" title="Long Format 03" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Long Format 03</h3><a href="https://youtu.be/jSwI1sLjiNo" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Long Format 03</h3><a href="https://youtu.be/jSwI1sLjiNo" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card wide-card">
-      <div class="gallery-media wide-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media wide">
         <iframe src="https://www.youtube.com/embed/rPrJmcNbTEM" title="Long Format 04" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Long Format 04</h3><a href="https://youtu.be/rPrJmcNbTEM" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Long Format 04</h3><a href="https://youtu.be/rPrJmcNbTEM" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card wide-card">
-      <div class="gallery-media wide-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media wide">
         <iframe src="https://www.youtube.com/embed/yKVrPG0KDGw" title="Long Format 05" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Long Format 05</h3><a href="https://youtu.be/yKVrPG0KDGw" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Long Format 05</h3><a href="https://youtu.be/yKVrPG0KDGw" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card wide-card">
-      <div class="gallery-media wide-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media wide">
         <iframe src="https://www.youtube.com/embed/gahXQxj15J0" title="Long Format 06" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Long Format 06</h3><a href="https://youtu.be/gahXQxj15J0" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Long Format 06</h3><a href="https://youtu.be/gahXQxj15J0" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card wide-card">
-      <div class="gallery-media wide-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media wide">
         <iframe src="https://www.youtube.com/embed/EG3IRKcneBY" title="Long Format 07" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Long Format 07</h3><a href="https://youtu.be/EG3IRKcneBY" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Long Format 07</h3><a href="https://youtu.be/EG3IRKcneBY" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card wide-card">
-      <div class="gallery-media wide-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media wide">
         <iframe src="https://www.youtube.com/embed/FGzgZiNWUQ0" title="Long Format 08" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Long Format 08</h3><a href="https://youtu.be/FGzgZiNWUQ0" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Long Format 08</h3><a href="https://youtu.be/FGzgZiNWUQ0" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card wide-card">
-      <div class="gallery-media wide-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media wide">
         <iframe src="https://www.youtube.com/embed/BdfB0S0BeVU" title="Long Format 09" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Long Format 09</h3><a href="https://youtu.be/BdfB0S0BeVU" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Long Format 09</h3><a href="https://youtu.be/BdfB0S0BeVU" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card wide-card">
-      <div class="gallery-media wide-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media wide">
         <iframe src="https://www.youtube.com/embed/SD7wUD7LDj4" title="Long Format 10" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Long Format 10</h3><a href="https://youtu.be/SD7wUD7LDj4" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Long Format 10</h3><a href="https://youtu.be/SD7wUD7LDj4" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card wide-card">
-      <div class="gallery-media wide-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media wide">
         <iframe src="https://www.youtube.com/embed/liBGgbLym3s" title="Long Format 11" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Long Format 11</h3><a href="https://youtu.be/liBGgbLym3s" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Long Format 11</h3><a href="https://youtu.be/liBGgbLym3s" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card wide-card">
-      <div class="gallery-media wide-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media wide">
         <iframe src="https://www.youtube.com/embed/abVpswkdsSY" title="Long Format 12" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Long Format 12</h3><a href="https://youtu.be/abVpswkdsSY" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Long Format 12</h3><a href="https://youtu.be/abVpswkdsSY" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card wide-card">
-      <div class="gallery-media wide-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media wide">
         <iframe src="https://www.youtube.com/embed/OkBHqjN6rRM" title="Long Format 13" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Long Format 13</h3><a href="https://youtu.be/OkBHqjN6rRM" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Long Format 13</h3><a href="https://youtu.be/OkBHqjN6rRM" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card wide-card">
-      <div class="gallery-media wide-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media wide">
         <iframe src="https://www.youtube.com/embed/1-fAV4KTVmg" title="Long Format 14" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Long Format 14</h3><a href="https://youtu.be/1-fAV4KTVmg" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Long Format 14</h3><a href="https://youtu.be/1-fAV4KTVmg" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card wide-card">
-      <div class="gallery-media wide-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media wide">
         <iframe src="https://www.youtube.com/embed/pBv2bnPbAkQ" title="Long Format 15" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Long Format 15</h3><a href="https://youtu.be/pBv2bnPbAkQ" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Long Format 15</h3><a href="https://youtu.be/pBv2bnPbAkQ" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card wide-card">
-      <div class="gallery-media wide-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media wide">
         <iframe src="https://www.youtube.com/embed/jv030EMj5HY" title="Long Format 16" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Long Format 16</h3><a href="https://youtu.be/jv030EMj5HY" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Long Format 16</h3><a href="https://youtu.be/jv030EMj5HY" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card wide-card">
-      <div class="gallery-media wide-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media wide">
         <iframe src="https://www.youtube.com/embed/W4i_ItCMOW4" title="Long Format 17" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Long Format 17</h3><a href="https://youtu.be/W4i_ItCMOW4" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Long Format 17</h3><a href="https://youtu.be/W4i_ItCMOW4" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card wide-card">
-      <div class="gallery-media wide-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media wide">
         <iframe src="https://www.youtube.com/embed/pWtRfuCOuJ8" title="Long Format 18" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Long Format 18</h3><a href="https://youtu.be/pWtRfuCOuJ8" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Long Format 18</h3><a href="https://youtu.be/pWtRfuCOuJ8" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card wide-card">
-      <div class="gallery-media wide-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media wide">
         <iframe src="https://www.youtube.com/embed/hZdMTHQ2Ki4" title="Long Format 19" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Long Format 19</h3><a href="https://youtu.be/hZdMTHQ2Ki4" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Long Format 19</h3><a href="https://youtu.be/hZdMTHQ2Ki4" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card wide-card">
-      <div class="gallery-media wide-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media wide">
         <iframe src="https://www.youtube.com/embed/q62EvhFHC58" title="Long Format 20" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Long Format 20</h3><a href="https://youtu.be/q62EvhFHC58" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Long Format 20</h3><a href="https://youtu.be/q62EvhFHC58" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card wide-card">
-      <div class="gallery-media wide-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media wide">
         <iframe src="https://www.youtube.com/embed/rRLf6JH_fR4" title="Long Format 21" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Long Format 21</h3><a href="https://youtu.be/rRLf6JH_fR4" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Long Format 21</h3><a href="https://youtu.be/rRLf6JH_fR4" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
-<article class="gallery-card wide-card">
-      <div class="gallery-media wide-media">
+    
+
+    <article class="gallery-card">
+      <div class="gallery-media wide">
         <iframe src="https://www.youtube.com/embed/KBtUl9Sw_gE" title="Long Format 22" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
-      <div class="gallery-info"><h3>Long Format 22</h3><a href="https://youtu.be/KBtUl9Sw_gE" target="_blank" rel="noopener">OPEN ↗</a></div>
+      <div class="gallery-meta"><h3>Long Format 22</h3><a href="https://youtu.be/KBtUl9Sw_gE" target="_blank" rel="noopener">Open ↗</a></div>
     </article>
+    
       </div>
     </section>
 
-    <section class="cta-section">
+    <section class="cta-section" id="contact">
       <div class="shell cta-grid">
-        <div><p class="role-chip">LIKE MY WORK?</p><h2>LET’S BUILD<br><span>SOMETHING!</span></h2></div>
-        <div class="contact-items">
+        <div>
+          <p class="label-chip">LET'S CONNECT</p>
+          <h2>READY FOR YOUR<br><span>NEXT VIDEO?</span></h2>
+        </div>
+
+        <div class="contact-list">
           <a href="mailto:irfanraza055@gmail.com">✉ irfanraza055@gmail.com</a>
+          <a href="tel:+917717777075">☎ 7717777075</a>
           <a href="https://wa.me/917717777075" target="_blank" rel="noopener">◉ WHATSAPP</a>
           <a href="https://www.instagram.com/edit_aspire/" target="_blank" rel="noopener">◎ @edit_aspire</a>
         </div>
-        <a class="yellow-btn big-contact" href="index.html">BACK HOME</a>
+
+        <a class="btn yellow big" href="index.html">BACK HOME</a>
       </div>
     </section>
   </main>
 
-  <footer class="footer"><div class="shell">© <span id="year"></span> Md Irfan Raza • Project Gallery</div></footer>
-  <script src="script-v11.js?v=11"></script>
+  <footer class="footer">
+    <div class="shell">© <span id="year"></span> Md Irfan Raza • Project Gallery</div>
+  </footer>
+
+  <script src="script-v12.js?v=12"></script>
 </body>
 </html>
