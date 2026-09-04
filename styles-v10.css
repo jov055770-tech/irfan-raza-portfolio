@@ -1,0 +1,1007 @@
+
+:root{
+  --bg:#020914;
+  --panel:#081424;
+  --panel2:#0d1b2d;
+  --line:#18324d;
+  --text:#f7f8fc;
+  --muted:#a8b4c5;
+  --yellow:#ffc928;
+  --red:#ff4a43;
+  --blue:#3c8cff;
+  --green:#68cd45;
+  --purple:#8e5cff;
+  --pixel:"Press Start 2P", monospace;
+  --body:"Inter",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:
+    radial-gradient(circle at 50% -8%,rgba(30,67,125,.24),transparent 28%),
+    linear-gradient(#020914,#030b15 65%,#030915);
+  color:var(--text);
+  font-family:var(--body);
+  overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.shell{width:min(1180px,calc(100% - 28px));margin:0 auto}
+.section{padding:34px 0}
+.pixel-header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:rgba(2,9,20,.94);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid #0d2137;
+}
+.header-inner{
+  min-height:68px;
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+.brand-block{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  min-width:180px;
+}
+.brand-play{
+  width:38px;height:38px;
+  border:2px solid #ff716b;
+  display:grid;place-items:center;
+  color:white;background:#c72d2c;
+  box-shadow:inset 0 0 0 3px #40151a;
+  font-size:13px;
+}
+.brand-block b{
+  display:block;
+  font-family:var(--pixel);
+  font-size:10px;
+  line-height:1.5;
+}
+.brand-block small{
+  display:block;
+  color:#aeb7c5;
+  margin-top:3px;
+  font-size:9px;
+}
+.main-nav{
+  margin-left:auto;
+  display:flex;
+  gap:18px;
+  align-items:center;
+}
+.main-nav a{
+  font-size:11px;
+  font-weight:800;
+  color:#dce3ed;
+}
+.main-nav a:hover,.main-nav .nav-gallery{color:var(--yellow)}
+.header-actions{display:flex;gap:8px}
+.mini-btn{
+  padding:10px 12px;
+  font-size:10px;
+  font-weight:900;
+  border-radius:10px;
+  border:1px solid #28405c;
+  white-space:nowrap;
+}
+.gallery-btn{background:#0e2946;color:#8dc2ff}
+.insta-btn{
+  background:linear-gradient(135deg,#6e43ff,#dc3674,#ff8b2d);
+  color:white;border-color:transparent;
+}
+.menu-btn{display:none;margin-left:auto;background:#0e1d30;color:white;border:1px solid #29415b;border-radius:9px;padding:8px 10px}
+
+.hero-stage{
+  position:relative;
+  background:
+    linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);
+  background-size:54px 54px;
+}
+.hero-grid{
+  position:relative;
+  min-height:430px;
+  display:grid;
+  grid-template-columns:320px 1fr;
+  gap:48px;
+  align-items:center;
+  padding-top:34px;
+  padding-bottom:42px;
+}
+.profile-game-card{
+  width:100%;
+  border:4px solid #347eeb;
+  box-shadow:
+    0 0 0 4px #18315a,
+    0 0 0 7px #0a1426,
+    0 14px 30px rgba(0,0,0,.45);
+  background:#0b1425;
+  padding:10px;
+  clip-path:polygon(4% 0,96% 0,100% 4%,100% 96%,96% 100%,4% 100%,0 96%,0 4%);
+}
+.profile-frame{
+  height:300px;
+  overflow:hidden;
+  background:#101a28;
+}
+.profile-frame img{
+  width:100%;height:100%;
+  object-fit:cover;object-position:center 18%;
+  filter:saturate(.95) contrast(1.02);
+}
+.profile-stats{
+  padding:10px 2px 0;
+}
+.profile-stats>div:first-child{
+  display:flex;justify-content:space-between;
+  font-family:var(--pixel);
+  font-size:8px;
+}
+.xp-track{
+  height:11px;
+  background:#1b2a3f;
+  margin-top:9px;
+  border-radius:2px;
+  overflow:hidden;
+}
+.xp-track i{
+  display:block;height:100%;width:82%;
+  background:linear-gradient(90deg,#42b947 0 35%,#a6df42 35% 58%,#ffd431 58% 78%,#ff6a3c 78%);
+}
+.role-chip{
+  display:inline-block;
+  font-family:var(--pixel);
+  font-size:9px;
+  color:white;
+  background:var(--red);
+  padding:9px 12px;
+  margin:0 0 15px;
+  box-shadow:4px 4px 0 #7d1f24;
+}
+.hero-copy h1{
+  margin:0 0 16px;
+  font-family:var(--pixel);
+  font-size:clamp(30px,4.5vw,50px);
+  line-height:1.18;
+  letter-spacing:-1px;
+}
+.hero-copy h1 span{color:var(--yellow)}
+.hero-desc{
+  max-width:700px;
+  margin:0 0 18px;
+  color:#d2dae5;
+  line-height:1.7;
+  font-size:16px;
+}
+.hero-list{
+  display:grid;
+  gap:7px;
+  font-size:13px;
+  color:#c7d1df;
+}
+.hero-list p{margin:0}
+.hero-ctas{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:20px;
+}
+.yellow-btn,.blue-btn,.outline-btn{
+  min-height:44px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 16px;
+  font-weight:900;
+  border-radius:7px;
+  font-size:12px;
+}
+.yellow-btn{background:var(--yellow);color:#111;box-shadow:3px 3px 0 #835e05}
+.blue-btn{background:#2867d5;color:white;box-shadow:3px 3px 0 #10306a}
+.outline-btn{border:1px solid #4b6483;background:#0b1728;color:#f0f5ff}
+.pixel-cloud{
+  position:absolute;
+  width:64px;height:26px;
+  background:#c9d7ee;
+  box-shadow:18px -10px 0 #e3ecfa,38px 0 0 #c9d7ee;
+  opacity:.9;
+}
+.cloud-one{top:46px;left:13%;animation:cloudFloat 8s ease-in-out infinite}
+.cloud-two{top:62px;right:7%;transform:scale(.8);animation:cloudFloat 10s ease-in-out infinite reverse}
+.game-flag{
+  position:absolute;
+  width:42px;height:80px;
+  bottom:18px;
+}
+.game-flag:before{
+  content:"";position:absolute;left:5px;top:0;width:3px;height:64px;background:white;
+}
+.game-flag:after{
+  content:"";position:absolute;left:8px;top:5px;width:30px;height:18px;
+  background:var(--red);clip-path:polygon(0 0,100% 50%,0 100%);
+  transform-origin:left center;animation:flagWave 1.5s ease-in-out infinite;
+}
+.flag-one{right:20px}
+.flag-two{left:365px;transform:scale(.75)}
+.ground-strip{
+  height:26px;
+  background:
+    linear-gradient(#75d445 0 8px,#3c8b2f 8px 12px,#7b4728 12px 100%);
+  border-top:3px solid #9de85c;
+  box-shadow:inset 0 -7px 0 rgba(0,0,0,.14);
+}
+
+.section-title-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  margin-bottom:18px;
+}
+.section-title-row.compact{margin-bottom:14px}
+.title-with-star{display:flex;align-items:center;gap:10px}
+.title-with-star>span{color:var(--yellow);font-size:17px}
+.section-title-row h2{
+  margin:0;
+  font-family:var(--pixel);
+  font-size:15px;
+  letter-spacing:.5px;
+}
+.text-link{
+  font-size:11px;
+  color:var(--yellow);
+  font-weight:800;
+}
+.five-work-row{
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:12px;
+}
+.work-card{
+  background:#081320;
+  border:1px solid #263d57;
+  border-radius:8px;
+  overflow:hidden;
+  box-shadow:0 12px 25px rgba(0,0,0,.22);
+}
+.work-media{
+  position:relative;
+  background:#02060b;
+}
+.vertical-media{aspect-ratio:9/16}
+.work-media iframe,.payoff-video iframe,.gallery-media iframe{
+  position:absolute;inset:0;width:100%;height:100%;border:0;
+}
+.work-badge{
+  position:absolute;right:7px;top:7px;
+  background:rgba(4,10,18,.88);
+  border:1px solid rgba(255,255,255,.16);
+  padding:5px 7px;
+  border-radius:5px;
+  font-size:7px;font-weight:900;
+}
+.work-meta{
+  display:flex;justify-content:space-between;align-items:end;
+  gap:8px;padding:10px;
+}
+.work-meta h3{margin:0 0 5px;font-size:13px}
+.work-meta p{margin:0;color:#aeb9c9;font-size:9px;line-height:1.45}
+.work-meta a{color:var(--red);font-size:19px}
+
+.payoff-card{
+  display:grid;
+  grid-template-columns:1.12fr .88fr;
+  background:#071321;
+  border:3px solid #e63f3b;
+  box-shadow:0 0 0 3px #491820,0 18px 35px rgba(0,0,0,.35);
+  padding:8px;
+  min-height:320px;
+}
+.payoff-video{
+  position:relative;
+  min-height:310px;
+  background:#02060b;
+}
+.featured-tag{
+  position:absolute;left:10px;top:10px;z-index:2;
+  background:#d52c2d;padding:6px 8px;font-size:8px;font-weight:900;
+}
+.payoff-copy{padding:24px}
+.level-up{color:var(--yellow);font-family:var(--pixel);font-size:9px}
+.payoff-copy h2{
+  margin:8px 0 10px;
+  color:var(--yellow);
+  font-family:var(--pixel);
+  font-size:19px;
+  line-height:1.45;
+}
+.payoff-copy>p:not(.level-up){color:#d5dee9;line-height:1.6;font-size:14px}
+.metric-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:18px 0}
+.metric-cards div{
+  border:1px solid #41556c;background:#0c1a2b;
+  padding:10px;border-radius:6px;text-align:center
+}
+.metric-cards b{display:block;font-size:16px}
+.metric-cards span{font-size:9px;color:#b3bfce}
+.completion{font-size:8px;color:#6fe047;font-weight:900}
+.completion-bar{height:9px;margin-top:7px;background:#16263b}
+.completion-bar i{display:block;height:100%;width:96%;background:repeating-linear-gradient(90deg,#5cca3b 0 12px,#99e74a 12px 24px,#173420 24px 27px)}
+
+.info-zone{
+  display:grid;
+  grid-template-columns:1fr .9fr;
+  gap:34px;
+  align-items:center;
+}
+.about-copy p{color:#d1d9e5;line-height:1.7;font-size:14px}
+.hearts{color:#ff514b;letter-spacing:8px;margin-top:15px}
+.mini-level-scene{
+  position:relative;height:150px;
+  border-bottom:24px solid #5aae36;
+  background:linear-gradient(transparent 68%,#10233b 68%);
+}
+.mini-platform{
+  position:absolute;width:44%;height:26px;bottom:-1px;left:10%;
+  background:#7b4728;border-top:8px solid #72cb40;
+}
+.mini-flag{
+  position:absolute;bottom:24px;left:22%;height:55px;width:3px;background:white;
+}
+.mini-flag:after{
+  content:"";position:absolute;left:3px;top:2px;width:24px;height:16px;background:#3a8eff;
+  clip-path:polygon(0 0,100% 50%,0 100%);animation:flagWave 1.6s ease-in-out infinite;
+}
+.mini-star{position:absolute;top:25px;right:27%;color:var(--yellow);font-size:28px;animation:twinkle 1.5s infinite}
+
+.service-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.service-grid article{
+  border:1px solid #2b4963;background:#0a1727;border-radius:8px;padding:16px;text-align:center;
+}
+.service-grid article:nth-child(1){border-color:#a74039}
+.service-grid article:nth-child(2){border-color:#2f75be}
+.service-grid article:nth-child(3){border-color:#a17a1a}
+.service-grid article:nth-child(4){border-color:#468c42}
+.service-grid article:nth-child(5){border-color:#8653a4}
+.service-grid article>span{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:6px;background:#111f32;color:var(--yellow);font-family:var(--pixel);font-size:11px}
+.service-grid h3{font-size:13px;margin:12px 0 8px}
+.service-grid p{margin:0;color:#b8c4d4;font-size:10px;line-height:1.5}
+
+.process-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;position:relative}
+.process-row article{
+  position:relative;border:1px solid #344960;border-radius:7px;padding:15px;background:#081420;
+}
+.process-row article b{
+  position:absolute;top:-12px;left:14px;width:26px;height:26px;border-radius:50%;
+  display:grid;place-items:center;background:#dc403b;color:white;font-size:9px;
+}
+.process-row article:nth-child(2) b{background:#367ee4}
+.process-row article:nth-child(3) b{background:#f2bd26;color:#111}
+.process-row article:nth-child(4) b{background:#6bad35}
+.process-row article>span{font-size:23px}
+.process-row h3{font-family:var(--pixel);font-size:9px;margin:12px 0 8px}
+.process-row p{margin:0;color:#aab7c8;font-size:10px;line-height:1.5}
+
+.tool-row{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.tool-row article{
+  display:flex;gap:10px;align-items:center;border:1px solid #334a63;background:#091523;padding:12px;border-radius:7px;
+}
+.tool-row article>b{
+  width:40px;height:40px;display:grid;place-items:center;border:2px solid #8a50d0;color:#c58aff;background:#1c1230;border-radius:5px;
+}
+.tool-row article:nth-child(3)>b{border-color:#318dd0;color:#61c0ff;background:#0b2538}
+.tool-row h3{margin:0 0 5px;font-size:11px}
+.tool-row p{margin:0;color:var(--yellow);font-size:12px;letter-spacing:2px}
+
+.screens-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.screens-grid figure{
+  margin:0;background:#081523;border:1px solid #30455d;border-radius:8px;overflow:hidden;
+}
+.screens-grid img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.screens-grid figcaption{padding:10px 12px;font-size:12px;font-weight:800}
+
+.cta-section{
+  background:linear-gradient(90deg,#0d3677,#0c2552 45%,#0c1d3b);
+  border-top:2px solid #2773cc;
+  margin-top:24px;
+  padding:24px 0;
+}
+.cta-grid{
+  display:grid;grid-template-columns:1.2fr 1fr auto;gap:24px;align-items:center;
+}
+.cta-grid h2{
+  margin:0;font-family:var(--pixel);font-size:24px;line-height:1.4
+}
+.cta-grid h2 span{color:var(--yellow)}
+.contact-items{display:grid;gap:8px;font-size:11px}
+.big-contact{white-space:nowrap}
+.footer{padding:16px 0;text-align:center;color:#7e8ea4;font-size:10px}
+
+.ambient-stars i{
+  position:fixed;z-index:-1;width:4px;height:4px;background:#ffd34a;box-shadow:0 0 10px #ffd34a;
+  animation:twinkle 1.8s ease-in-out infinite;
+}
+.ambient-stars .s1{top:14%;left:4%}.ambient-stars .s2{top:9%;right:8%;animation-delay:.4s}
+.ambient-stars .s3{top:28%;left:42%;animation-delay:.7s}.ambient-stars .s4{top:38%;right:4%;animation-delay:1s}.ambient-stars .s5{top:61%;left:8%;animation-delay:1.3s}
+
+.gallery-hero{
+  padding:55px 0 40px;
+  min-height:260px;
+}
+.gallery-hero h1{
+  margin:0;font-family:var(--pixel);font-size:clamp(28px,5vw,52px);line-height:1.25
+}
+.gallery-hero h1 span{color:var(--yellow)}
+.gallery-hero>p:not(.role-chip){color:#bdc9d8;max-width:720px;line-height:1.7}
+.gallery-counts{display:flex;gap:12px;margin-top:20px}
+.gallery-counts div{min-width:120px;border:1px solid #2d4964;background:#091625;padding:12px;border-radius:7px}
+.gallery-counts b{display:block;color:var(--yellow);font-size:22px}
+.gallery-counts span{font-size:9px;color:#b8c4d3}
+.gallery-reels-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+.gallery-long-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.gallery-card{border:1px solid #2a435d;background:#081421;border-radius:8px;overflow:hidden}
+.gallery-media{position:relative;background:#02060b}
+.wide-media{aspect-ratio:16/9}
+.gallery-info{display:flex;justify-content:space-between;align-items:center;padding:10px 11px}
+.gallery-info h3{margin:0;font-size:11px}
+.gallery-info a{color:var(--yellow);font-size:9px;font-weight:900}
+
+@keyframes flagWave{
+  0%,100%{transform:skewY(0deg) scaleX(1)}
+  50%{transform:skewY(-7deg) scaleX(.87)}
+}
+@keyframes twinkle{
+  0%,100%{opacity:.45;transform:scale(.7)}
+  50%{opacity:1;transform:scale(1.35)}
+}
+@keyframes cloudFloat{
+  0%,100%{transform:translateX(0)}
+  50%{transform:translateX(14px)}
+}
+
+@media(max-width:1100px){
+  .main-nav{display:none;position:absolute;top:68px;left:0;right:0;background:#05101e;border-bottom:1px solid #23364f;padding:14px;flex-direction:column;align-items:flex-start}
+  .main-nav.open{display:flex}
+  .menu-btn{display:block}
+  .header-actions{margin-left:0}
+  .brand-block{min-width:auto}
+  .five-work-row{overflow-x:auto;grid-template-columns:repeat(5,220px);padding-bottom:8px}
+  .five-work-row::-webkit-scrollbar{height:6px}.five-work-row::-webkit-scrollbar-thumb{background:#284867}
+  .service-grid{grid-template-columns:repeat(3,1fr)}
+  .tool-row{grid-template-columns:repeat(3,1fr)}
+  .gallery-reels-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:840px){
+  .hero-grid{grid-template-columns:1fr;gap:28px}
+  .profile-game-card{max-width:340px}
+  .flag-two{left:auto;right:80px}
+  .payoff-card{grid-template-columns:1fr}
+  .info-zone{grid-template-columns:1fr}
+  .process-row{grid-template-columns:repeat(2,1fr)}
+  .service-grid{grid-template-columns:repeat(2,1fr)}
+  .screens-grid{grid-template-columns:1fr}
+  .cta-grid{grid-template-columns:1fr}
+  .gallery-long-grid{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+  .shell{width:min(100% - 16px,1180px)}
+  .header-inner{min-height:62px;gap:8px}
+  .brand-block b{font-size:8px}
+  .brand-block small{font-size:7px}
+  .brand-play{width:32px;height:32px}
+  .mini-btn{padding:8px 9px;font-size:8px}
+  .menu-btn{padding:7px 8px}
+  .hero-grid{padding-top:22px}
+  .hero-copy h1{font-size:29px}
+  .hero-desc{font-size:14px}
+  .hero-list{font-size:11px}
+  .profile-frame{height:280px}
+  .five-work-row{grid-template-columns:repeat(5,78vw)}
+  .payoff-copy{padding:16px}
+  .payoff-copy h2{font-size:15px}
+  .metric-cards{grid-template-columns:1fr}
+  .service-grid,.process-row,.tool-row{grid-template-columns:1fr}
+  .section-title-row{align-items:flex-start;flex-direction:column}
+  .gallery-reels-grid{grid-template-columns:1fr}
+  .gallery-counts{width:100%}
+  .gallery-counts div{flex:1}
+  .cta-grid h2{font-size:19px}
+}
+
+
+/* ---------- V7 PNG asset based decorations ---------- */
+.ambient-stars{
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:-1;
+}
+.ambient-stars i{
+  position:fixed;
+  width:26px;
+  height:26px;
+  background:url('assets/star.png') center/contain no-repeat;
+  animation:twinkle 1.9s ease-in-out infinite;
+  box-shadow:none;
+}
+.hero-stage{overflow:hidden}
+.asset-cloud,
+.asset-flag,
+.asset-coin,
+.asset-qblock,
+.asset-pipe,
+.asset-ladder{
+  position:absolute;
+  user-select:none;
+  pointer-events:none;
+  image-rendering:pixelated;
+}
+.asset-cloud{
+  width:120px;
+  opacity:.96;
+  filter:drop-shadow(0 10px 12px rgba(0,0,0,.18));
+  animation:cloudFloat 8s ease-in-out infinite;
+}
+.cloud-one{top:36px;left:10%}
+.cloud-two{top:52px;right:8%;width:110px;animation-duration:10s;animation-direction:reverse}
+.asset-ladder{left:6px;bottom:26px;width:34px;opacity:.92}
+.asset-coin{width:24px;animation:coinFloat 2.8s ease-in-out infinite}
+.coin-one{right:9%;top:84px}
+.coin-two{right:4%;top:134px;animation-delay:.6s}
+.asset-qblock{right:3%;top:158px;width:56px;animation:bob 2.4s ease-in-out infinite}
+.asset-pipe{right:24px;bottom:8px;width:90px}
+.asset-flag{width:34px;bottom:24px;animation:flagAssetWave 1.6s ease-in-out infinite;transform-origin:15px 90px}
+.flag-one{right:108px}
+.flag-two{left:334px;width:30px;animation-delay:.3s}
+.ground-strip{
+  height:40px;
+  background:url('assets/ground-tile.png') left top/160px 40px repeat-x;
+  border-top:none;
+  box-shadow:none;
+}
+.screens-decor{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:12px;
+  opacity:.96;
+}
+.screens-decor img:first-child{width:70px;image-rendering:pixelated}
+.screens-decor img:last-child{width:24px;image-rendering:pixelated}
+
+.gallery-decor{
+  position:relative;
+  height:0;
+}
+.gallery-decor img{
+  position:absolute;
+  image-rendering:pixelated;
+  pointer-events:none;
+}
+.gallery-cloud-left{left:40px;top:-210px;width:120px;animation:cloudFloat 8s ease-in-out infinite}
+.gallery-cloud-right{right:20px;top:-190px;width:112px;animation:cloudFloat 10s ease-in-out infinite reverse}
+.gallery-coin{right:90px;top:-130px;width:24px;animation:coinFloat 2.8s ease-in-out infinite}
+.gallery-flag{right:18px;top:-40px;width:34px;animation:flagAssetWave 1.6s ease-in-out infinite;transform-origin:15px 90px}
+
+@keyframes coinFloat{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-8px)}
+}
+@keyframes bob{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-6px)}
+}
+@keyframes flagAssetWave{
+  0%,100%{transform:rotate(0deg)}
+  50%{transform:rotate(-4deg)}
+}
+
+@media(max-width:1100px){
+  .coin-two,.qblock-one{display:none}
+}
+@media(max-width:840px){
+  .asset-cloud{width:92px}
+  .asset-pipe{width:70px;right:10px}
+  .flag-two{left:auto;right:86px}
+  .coin-one{top:72px}
+}
+@media(max-width:620px){
+  .cloud-one{left:6%}
+  .cloud-two{right:2%}
+  .asset-ladder{display:none}
+  .asset-pipe{width:58px}
+  .flag-one{right:76px}
+  .flag-two{display:none}
+  .asset-qblock{top:148px;width:48px}
+}
+
+
+/* =========================
+   V8 — REAL PNG HERO SYSTEM
+   ========================= */
+
+/* Disable all old CSS-drawn hero art completely */
+.pixel-cloud,
+.game-flag,
+.asset-cloud,
+.asset-flag,
+.asset-coin,
+.asset-qblock,
+.asset-pipe,
+.asset-ladder{
+  display:none !important;
+}
+
+.hero-stage{
+  position:relative;
+  overflow:hidden;
+  min-height:500px;
+}
+.hero-grid{
+  position:relative;
+  z-index:2;
+  min-height:500px;
+  grid-template-columns:340px minmax(0,1fr);
+  gap:54px;
+  padding-top:38px;
+  padding-bottom:60px;
+}
+
+/* Single PNG scenery stays behind content */
+.hero-scenery-png{
+  position:absolute;
+  z-index:0;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center bottom;
+  pointer-events:none;
+  image-rendering:pixelated;
+}
+
+/* Profile is now one composited PNG; no CSS border, no overlap */
+.profile-card-wrap{
+  position:relative;
+  z-index:3;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.profile-card-png{
+  width:min(100%,330px);
+  height:auto;
+  display:block;
+  filter:drop-shadow(0 18px 28px rgba(0,0,0,.42));
+  image-rendering:auto;
+}
+
+/* Ensure text is always above scenery */
+.hero-copy{
+  position:relative;
+  z-index:4;
+}
+
+/* Slightly cleaner title */
+.hero-copy h1{
+  font-size:clamp(28px,4.2vw,46px);
+  line-height:1.2;
+}
+
+/* Real tiled PNG ground */
+.ground-strip{
+  position:relative;
+  z-index:5;
+  height:44px;
+  background:url('assets/ground-tile.png?v=8') left top/176px 88px repeat-x !important;
+  border:0 !important;
+  box-shadow:0 -5px 18px rgba(0,0,0,.25) !important;
+}
+
+/* Gallery uses a PNG scenery layer too */
+.gallery-scenery-png{
+  position:absolute;
+  top:68px;
+  left:0;
+  width:100%;
+  height:300px;
+  object-fit:cover;
+  object-position:center;
+  pointer-events:none;
+  z-index:0;
+  image-rendering:pixelated;
+}
+.gallery-hero{
+  position:relative;
+  z-index:2;
+}
+.gallery-decor{display:none!important}
+
+/* Make the top action buttons impossible to miss */
+.header-actions{
+  display:flex !important;
+  gap:8px;
+  position:relative;
+  z-index:120;
+}
+.gallery-btn{
+  background:#10355f !important;
+  color:#8fc4ff !important;
+  border-color:#2d68a7 !important;
+}
+.insta-btn{
+  background:linear-gradient(135deg,#7144ff,#dd3677,#ff922d) !important;
+  color:#fff !important;
+  border:0 !important;
+}
+
+@media(max-width:1100px){
+  .hero-grid{
+    grid-template-columns:300px 1fr;
+    gap:34px;
+  }
+  .profile-card-png{width:290px}
+}
+
+@media(max-width:840px){
+  .hero-grid{
+    grid-template-columns:1fr;
+    gap:18px;
+    padding-top:26px;
+  }
+  .profile-card-wrap{
+    justify-content:flex-start;
+  }
+  .profile-card-png{
+    width:min(78vw,320px);
+  }
+  .hero-scenery-png{
+    opacity:.82;
+    object-position:64% bottom;
+  }
+}
+
+@media(max-width:620px){
+  .header-actions{
+    gap:5px;
+  }
+  .mini-btn{
+    padding:7px 8px !important;
+    font-size:7px !important;
+  }
+  .hero-stage{
+    min-height:unset;
+  }
+  .hero-grid{
+    min-height:unset;
+    padding-bottom:48px;
+  }
+  .profile-card-png{
+    width:min(82vw,300px);
+  }
+  .hero-scenery-png{
+    height:100%;
+    opacity:.62;
+    object-position:72% bottom;
+  }
+  .hero-copy h1{
+    font-size:27px;
+  }
+}
+
+
+/* =========================
+   V9 fixes: proper sky + PNG scene
+   ========================= */
+
+/* Real sky background behind hero */
+.hero-stage{
+  background: #03101d url('assets/sky-v9.png?v=9') center top / cover no-repeat !important;
+  position: relative;
+}
+.hero-stage::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg, rgba(3,10,20,.08) 0%, rgba(3,10,20,.10) 50%, rgba(3,10,20,.22) 100%);
+  z-index:1;
+  pointer-events:none;
+}
+.hero-grid{
+  position:relative;
+  z-index:2;
+}
+
+/* Keep scenery visible with the sky */
+.hero-scenery-png{
+  z-index:1 !important;
+  opacity:1 !important;
+}
+
+/* Full screenshots should be visible; no more crop */
+.screens-grid figure{
+  padding:10px;
+  background:#081523;
+}
+.screens-grid img{
+  width:100% !important;
+  height:220px !important;
+  aspect-ratio:auto !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  background:#050d18;
+  border-radius:6px;
+}
+.screens-grid figcaption{
+  padding:12px 4px 4px !important;
+}
+
+/* Replace the old CSS mini scene with a real PNG scene */
+.mini-level-scene,
+.mini-flag,
+.mini-star,
+.mini-platform{
+  display:none !important;
+}
+.mini-scene-wrap{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid #27405d;
+  background:#06101c url('assets/sky-v9.png?v=9') center / cover no-repeat;
+  border-radius:8px;
+  overflow:hidden;
+  min-height:160px;
+}
+.mini-scene-wrap img{
+  width:100%;
+  height:auto;
+  display:block;
+  image-rendering:pixelated;
+}
+
+/* Gallery hero also needs real sky */
+.gallery-hero{
+  position:relative;
+  background:#04111e url('assets/sky-v9.png?v=9') center top / cover no-repeat;
+  border:1px solid #1c3550;
+  border-radius:10px;
+  padding:42px 22px 34px !important;
+  overflow:hidden;
+}
+.gallery-hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg, rgba(4,17,30,.12), rgba(4,17,30,.22));
+  pointer-events:none;
+}
+.gallery-hero > *{
+  position:relative;
+  z-index:2;
+}
+.gallery-scenery-png{
+  z-index:1 !important;
+  opacity:1 !important;
+}
+
+/* Make the hero profile card breathe a bit more */
+.profile-card-png{
+  width:min(100%, 345px) !important;
+}
+
+/* Slightly more visible top buttons */
+.gallery-btn{
+  background:#123d6b !important;
+  color:#b7ddff !important;
+}
+.insta-btn{
+  box-shadow:0 6px 18px rgba(220,54,116,.25);
+}
+
+/* responsive */
+@media(max-width:840px){
+  .screens-grid img{
+    height:200px !important;
+  }
+  .mini-scene-wrap{
+    min-height:130px;
+  }
+}
+@media(max-width:620px){
+  .screens-grid img{
+    height:180px !important;
+  }
+}
+
+
+/* ==========================
+   V10 — approved asset pack
+   ========================== */
+
+.hero-scenery-png{
+  opacity:1 !important;
+  object-fit:cover !important;
+  object-position:center bottom !important;
+}
+
+.gallery-scenery-png{
+  opacity:1 !important;
+  object-fit:cover !important;
+  object-position:center top !important;
+}
+
+/* Use the newly replaced star asset for ambient stars */
+.ambient-stars i{
+  background:url('assets/star.png?v=10') center/contain no-repeat !important;
+  width:20px !important;
+  height:20px !important;
+  box-shadow:none !important;
+}
+
+/* Keep profile clear; decorative art should never cover it */
+.profile-card-wrap{
+  z-index:5 !important;
+}
+.hero-copy{
+  z-index:5 !important;
+}
+
+/* Give the hero slightly more breathing space */
+.hero-grid{
+  min-height:520px !important;
+  padding-top:42px !important;
+  padding-bottom:68px !important;
+}
+
+/* Clean modern dark sky behind the new assets */
+.hero-stage{
+  background:
+    linear-gradient(rgba(255,255,255,.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.018) 1px, transparent 1px),
+    radial-gradient(circle at 52% 4%, rgba(24,61,115,.34), transparent 34%),
+    #020b17 !important;
+  background-size:64px 64px,64px 64px,auto,auto !important;
+}
+
+/* gallery sky */
+.gallery-hero{
+  background:
+    radial-gradient(circle at 50% 0%, rgba(24,61,115,.32), transparent 40%),
+    #04101d !important;
+}
+
+@media(max-width:1100px){
+  .hero-scenery-png{
+    object-position:58% bottom !important;
+  }
+}
+
+@media(max-width:840px){
+  .hero-grid{
+    min-height:unset !important;
+    padding-top:30px !important;
+    padding-bottom:56px !important;
+  }
+  .hero-scenery-png{
+    object-position:67% bottom !important;
+    opacity:.82 !important;
+  }
+}
+
+@media(max-width:620px){
+  .hero-scenery-png{
+    object-position:72% bottom !important;
+    opacity:.66 !important;
+  }
+  .ambient-stars i{
+    width:16px !important;
+    height:16px !important;
+  }
+}

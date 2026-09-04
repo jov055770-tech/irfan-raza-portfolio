@@ -55,3 +55,29 @@ Do NOT upload an older V4/V5 folder if you want Gallery and Instagram fixes.
 - `?v=8` cache-busting added so Netlify/browser cannot keep showing the old design
 
 When deploying, extract this ZIP and upload the ENTIRE V8 folder.
+
+
+## V9 fixes
+- Added a real sky background PNG: `assets/sky-v9.png`
+- Replaced the About-section mini scene with a real PNG: `assets/mini-scene-v9.png`
+- Fixed screenshot cards so images show fully using `object-fit: contain`
+- Updated CSS reference to `styles-v9.css?v=9`
+- Updated JS reference to `script-v9.js?v=9`
+- This version should visibly look different even with browser cache
+
+
+## V10 asset replacement
+The website now uses the newly approved visual assets:
+- `assets/cloud.png`
+- `assets/coin.png`
+- `assets/star.png`
+- `assets/pipe.png`
+
+They were trimmed, optimized and resized for the portfolio.
+Hero and gallery scenery were rebuilt as:
+- `assets/hero-scenery-v10.png`
+- `assets/gallery-scenery-v10.png`
+
+Cache busting:
+- `styles-v10.css?v=10`
+- `script-v10.js?v=10`
